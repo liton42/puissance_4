@@ -6,7 +6,7 @@
 #*   By: beerus <bckeur@free.exe>                   +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/10/06 23:08:58 by beerus            #+#    #+#             *#
-#*   Updated: 2017/02/17 02:10:50 by liton            ###   ########.fr       *#
+#*   Updated: 2017/11/14 04:45:13 by liton            ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -83,6 +83,7 @@ SRC_NAME = ft_memset.c 	        \
 		   ft_strjoinfree.c     \
 		   get_next_line.c      \
 		   ft_split_whitespaces.c \
+		   ft_swap_string.c \
 		   ft_lstadd_wiw.c
 
 OBJ_NAME = $(SRC_NAME:.c=.o)

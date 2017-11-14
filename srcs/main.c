@@ -6,7 +6,7 @@
 /*   By: liton <livbrandon@outlook.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/12 19:17:10 by liton             #+#    #+#             */
-/*   Updated: 2017/11/14 03:25:41 by liton            ###   ########.fr       */
+/*   Updated: 2017/11/14 04:48:07 by liton            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ static void			retry(int tab[LINE][COL], char *player[2], int p)
 			if (y[0] == 'y')
 			{
 				initialize_tab(tab);
+				ft_swap_string(&player[0], &player[1]);
 				solve_puissance_4(tab, player);
 			}
 			else
@@ -86,6 +87,8 @@ void			solve_puissance_4(int tab[LINE][COL], char *player[2])
 		retry(tab, player, p);
 		if (tab_end(tab) == 0)
 		{
+			ft_putchar('\n');
+			print_p4(tab);
 			ft_putchar('\n');
 			ft_putstr("No one win, do you want replay ? (y/n)\n");
 			get_next_line(0, &replay);

@@ -6,7 +6,7 @@
 /*   By: beerus <bckeur@free.exe>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/06 21:52:13 by beerus            #+#    #+#             */
-/*   Updated: 2017/09/05 19:01:16 by liton            ###   ########.fr       */
+/*   Updated: 2017/11/14 04:46:43 by liton            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,4 +105,5 @@ void			ft_lower(char *str);
 long long int	ft_atoll(const char *nptr);
 char			*ft_strjoinfree(char *s1, char *s2, int f);
 char			**ft_split_whitespaces(char *str);
+void			ft_swap_string(char **str1, char **str2);
 #endif
