@@ -6,7 +6,7 @@
 /*   By: liton <livbrandon@outlook.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/12 19:49:24 by liton             #+#    #+#             */
-/*   Updated: 2017/11/14 06:02:24 by liton            ###   ########.fr       */
+/*   Updated: 2018/02/07 01:36:50 by liton            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,9 @@ int				put_p4(int tab[LINE][COL], int place, int player)
 
 static void		color(int player)
 {
+	ft_putstr("\033[1;34m");
 	ft_putstr("| ");
+	ft_putstr("\033[0m");
 	if (player == 1)
 		ft_putstr("\033[0;31m");
 	if (player == 2)
@@ -91,13 +93,19 @@ void			print_p4(int tab[LINE][COL])
 	ft_putendl("  1   2   3   4   5   6   7");	
 	while (i < LINE)
 	{
+		ft_putstr("\033[1;34m");
 		ft_putendl("-----------------------------");
+		ft_putstr("\033[0m");
 		j = -1;
 		while (++j < COL)
 			color(tab[i][j]);
+		ft_putstr("\033[1;34m");
 		ft_putchar('|');
+		ft_putstr("\033[0m");
 		ft_putchar('\n');
 		++i;
 	}
+	ft_putstr("\033[1;34m");
 	ft_putendl("-----------------------------");
+	ft_putstr("\033[0m");
 }

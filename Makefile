@@ -6,7 +6,7 @@
 #    By: liton <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/14 20:24:52 by liton             #+#    #+#              #
-#*   Updated: 2017/11/13 00:15:13 by liton            ###   ########.fr       *#
+#*   Updated: 2018/02/07 01:34:00 by liton            ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC	 =	print_p4.c \
 # colors
 GRN     =   \033[0;32m
 RED     =   \033[0;31m
-CYN     =   \033[0;36m
+CYN     =   \033[1;34m
 NC      =   \033[0m
 SRCS        = $(addprefix $(SRCDIR), $(SRC))
 OBJS        = $(addprefix $(OBJDIR), $(SRC:.c=.o))
